@@ -5,7 +5,11 @@ body{
   :root {--brand-color: #212121;
   --second-color: #757575;
   --next-color: #ffffff;}
-  
+  .container{
+    width: 1170px;
+  margin: 0 auto;
+padding: 0 15px;
+border: solid red;}
 .logo {
   font-family: 'Raleway', sans-serif;
 }
@@ -14,13 +18,15 @@ a {
 }
 .list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 .logo {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(32 / 26);
   letter-spacing: 0.03em;
-  color: #212121;
+  color: #2196F3;
 }
 .web {
   color: black;
@@ -32,16 +38,44 @@ a {
 :focus {
   color: #2196f3;
 }
+h1, h2, p{
+  margin: 0
+
+}
+
 /* HW-01 */
 
 /* header */
 
+.page-header .container{
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+}
+.page-header .logo{
+ margin-right: 93px;
+}
+.header-list{
+  display: flex;
+}
+.header-list .item:not(:first-child){
+  margin-left: 50px;
+}
+.page-header{
+  padding-top: 24px;
+}
 .header-list-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: black;
+  margin-left: 50px;
+}
+.header-contakts{
+  margin-left: auto;
+  padding-top: 6px;
+
 }
 .header-tel-link {
   font-weight: 500;
@@ -56,6 +90,10 @@ a {
 .main {
   background-color: #2f303a;
 }
+.main-container{
+padding-top: 200px;
+  padding-bottom: 280px;
+}
 .main-section {
   font-weight: 900;
   font-size: 44px;
@@ -64,6 +102,10 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--next-color);
+  margin: 0 auto;
+  padding-bottom: 30px;
+  max-width: 696px;
+  
 }
 .main-button {
   font-weight: 700;
@@ -77,6 +119,8 @@ a {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin: 0 auto;
+  padding: 10px 30px;
 }
 .hover-butoon:hover {
   background: #188ce8;
@@ -86,6 +130,15 @@ a {
 
 /* hero */
 
+.hero-list{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+}
+.hero-list-item{
+  padding-right: 30px;
+  
+}
 .hero-link {
   font-weight: 700;
   font-size: 14px;
@@ -111,14 +164,29 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color);
+  padding-bottom: 50px;
+}
+
+.work-img{
+  width: calc((100% - 30px) / 3);
+  margin-left: 30px;
+}
+.work .list{
+  display: flex;
+}
+.work-img-list{
+  padding-bottom: 94px;
 }
 
 /* team */
+
 .team {
   background: #f5f4fa;
 }
 .team-link {
   background: var(--next-color);
+  margin-left: 30px;
+  
 }
 .team-line {
   font-weight: 700;
@@ -127,6 +195,16 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color);
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.all-team{
+  padding-bottom: 94px;
+}
+.team .list {
+  display: flex;
+  gap: 30px;
+  
 }
 .team-list {
   font-weight: 700;
@@ -135,6 +213,9 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color);
+  margin-top: 30px;
+  text-align: center;
+  
 }
 .team-link-list {
   font-weight: 400;
@@ -142,12 +223,18 @@ a {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--second-color);
+  padding-bottom: 30px ;
+  text-align: center;
 }
 
-/* address */
+/* footer */
 
-.address {
+.address{
+  
   background-color: #2f303a;
+}
+.address .container{
+  padding-top: 60px;
 }
 .address-link-link {
   font-weight: 400;
@@ -162,6 +249,14 @@ a {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 60px;
+}
+.address .logo{
+display: block;
+padding-bottom: 20px;
+}
+.address-li{
+  margin-bottom: 9px;
 }
 
 /* HW-02  */
@@ -191,7 +286,15 @@ line-height: 26px;
 letter-spacing: 0.03em;
   color: var(--brand-color);
 }
-
+.project-list{
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.project .butoon{
+  margin-right: 8px;
+}
 .project-1st-button {
 width: 73px;
 height: 38px;
@@ -249,10 +352,17 @@ letter-spacing: 0.03em;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--second-color);
+  
+}
+.project-job{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 94px;
 }
 
 /* address */
-.adres {
+.footer {
   background-color: #2f303a;
 }
 .adres-link {
@@ -271,4 +381,7 @@ letter-spacing: 0.03em;
 }
 .web-2 {
   color: var(--next-color);
+}
+.footer .container{
+  padding-top: 60px;
 }

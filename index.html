@@ -8,32 +8,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-rel="stylesheet">
+ rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body class="body">
     <!--header-->
-    <header class="header">
-      <nav class="header-nav">
-        <a class="logo" href="./webstudio">Web<span class="web">Studio</span> </a>
-        <ul class="header-list list">
-          <li> <a class="header-list-item hover-tup" href="./index.html">Студія</a></li>
-          <li> <a class="header-list-item hover-tup" href="./portfolio.html">Портфоліо</a></li>
-          <li> <a class="header-list-item hover-tup">Контакти</a></li>
+    <header class="page-header">
+      <div class="container">
+          <a class="logo" href="./webstudio">Web<span class="web">Studio</span> </a>
+        <div class="header-container">
+          <ul class="header-list list">
+          <li class="item"> <a class="header-list-item hover-tup" href="./index.html">Студія</a></li>
+          <li class="item"> <a class="header-list-item hover-tup" href="./portfolio.html">Портфоліо</a></li>
+          <li class="item"> <a class="header-list-item hover-tup">Контакти</a></li>
         </ul>
-      </nav>
-      <ul class="list">
+        </div>
+      <div class="header-contakts">
+        <ul class="list header-list">
         <li class="header-list-item"><a class="header-tel-link hover-tup link" href="info@devstudio.com">info@devstudio.com</a></li>
         <li class="header-list-item"><a class="header-tel-link hover-tup link" href="+380961111111">+38 096 111 11 11</a></li>
       </ul>
+      </div>
+      </div>
+      <nav class="header-nav">
     </header>
     <!--main-->
     <main>
       <section class="main">
-        <h1 class="main-section">ЕФЕКТИВНІШІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button class="main-button hover-butoon butoon" type="button">замовити послугу</button>
+        <div class="container">
+          <div class="main-container">
+            <h1 class="main-section">ЕФЕКТИВНІШІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+        <button class="main-button hover-butoon butoon" type="button">замовити послугу
+        </button>
+      </div>
+        </div>
       </section>
       <section class="hero">
+        <div class="container">
         <ul class="hero-list list">
           <!--<h2>Прихованка</h2>-->
           <li class="hero-list-item">
@@ -53,49 +65,61 @@ rel="stylesheet">
             <p class="hero-link-link">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
         </ul>
+        </div>
       </section>
       <!--чим ми займаємосся-->
       <section class="work">
+        <div class="container">
         <h2 class="work-link">Чим ми займаємося</h2>
-        <ul class="list">
-          <li><img src="./images/computer.jpg" alt="computer" width="370" /></li>
-          <li><img src="./images/phone.jpg" alt="phone" width="370" /></li>
-          <li><img src="./images/tublet.jpg" alt="tublet" width="370" /></li>
+        <div class="work-img-list">
+          <ul class="list">
+          <li class="work-img"><img src="./images/computer.jpg" alt="computer" width="370" /></li>
+          <li class="work-img"><img src="./images/phone.jpg" alt="phone" width="370" /></li>
+          <li class="work-img"><img src="./images/tublet.jpg" alt="tublet" width="370" /></li>
         </ul>
+        </div>
+        
+        </div>
       </section>
       <!--наша команда-->
       <section class="team">
+        <div class="container">
         <h2 class="team-line">Наша команда</h2>
-        <ul class="list">
-          <li class="team-link">
+        <div class="all-team">
+          <ul class="list">
+            <li class="team-link">
             <img src="./images/Christopher_Walker.jpg" alt="Christopher_Walker" width="270" />
             <h3 class="team-list">Ігор Дем'яненко</h3>
             <p class="team-link-list">Product Designer</p>
           </li>
-          <li class="team-link">
+            <li class="team-link">
             <img src="./images/Kylie_Evans.jpg" alt="Kylie_Evans" width="270" />
             <h3 class="team-list">Ольга Рєпіна</h3>
             <p class="team-link-list">Frontend Developer</p>
           </li>
-          <li class="team-link">
+            <li class="team-link">
             <img src="./images/Ryan_Harris.jpg" alt="Ryan_Harris" width="270" />
             <h3 class="team-list">Микола Тарасов</h3>
             <p class="team-link-list">Marketing</p>
           </li>
-          <li class="team-link">
+            <li class="team-link">
             <img src="./images/Tyler_Moore.jpg" alt="Tyler_Moore" width="270" />
             <h3 class="team-list">Михайло Єрмаков</h3>
             <p class="team-link-list">UI Designer</p>
           </li>
         </ul>
+        </div>  
+        </div>
       </section>
     </main>
     <!--footer-->
     <footer class="address">
-      <a class="logo" href="./webstudio">Web<span class="web-2">Studio</span> </a>
-      <address>
+      <div class="container">
+      <a class="logo address-logo" href="./webstudio">Web<span class="web-2">Studio</span> </a>
+      <div class="address-link">
+        <address>
         <ul class="list">
-          <li>
+          <li class="address-li">
             <a class="address-link-link hover-tup"
               href="https://goo.gl/maps/J3TThGuoo7Lbi47X8"
               target="_blank"
@@ -103,10 +127,12 @@ rel="stylesheet">
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a  class="address-link hover-tup" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a  class="address-link hover-tup" href="tel+380961111111">+38 096 111 11 11</a></li>
+          <li class="address-li"><a  class="address-link hover-tup" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="address-li"><a  class="address-link hover-tup" href="tel+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+      </div>
+      </div>
     </footer>
   </body>
 </html>
