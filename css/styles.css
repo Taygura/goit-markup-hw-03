@@ -11,7 +11,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -55,7 +54,7 @@ p {
   padding-top: 24px;
   padding-bottom: 25px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 .page-header .logo {
   margin-right: 93px;
@@ -89,8 +88,6 @@ p {
 
 .main {
   background-color: #2f303a;
-}
-.main-container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -107,39 +104,41 @@ p {
   max-width: 696px;
 }
 .main-button {
-  font-weight: 700;
+   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--next-color);
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   margin: 0 auto;
   padding: 10px 32px;
+  border-radius: 4px;
+  background: #2196f3;
+  border: #ffffff;
+  
 }
 .hover-butoon:hover {
   background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 /* hero */
 
 .hero-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+.hero .container {
   padding-top: 94px;
   padding-bottom: 94px;
-  display: flex;
-  flex-basis: 270px;
 }
 .hero-list-item {
-  margin-right: 30px;
-  
+  flex-basis: calc(100% / 4 - 30px);
 }
-
+.hero-list-item:not(:last-child) {
+margin-right: 30px;
+}
 .hero-link {
   font-weight: 700;
   font-size: 14px;
@@ -154,7 +153,6 @@ p {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--second-color);
-  
 }
 
 /* work */
@@ -168,21 +166,21 @@ p {
   color: var(--brand-color);
   padding-bottom: 50px;
 }
-
-.work-img {
-  
-}
 .work .list {
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
+  list-style: none;
 }
-.work-img-list {
+.work .container {
   padding-bottom: 94px;
-  
-  
-  
 }
-
+.work-img {
+  flex-basis: calc(100% / 3 - 30px);
+}
+.work-img:not(:last-child){
+  margin-right: 30px;
+}
 /* team */
 
 .team {
@@ -191,7 +189,11 @@ p {
 .team-link {
   background: var(--next-color);
 }
-.team-link:not(::first-child){
+  .team-link:not(:last-child) {
+  margin-right: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+.team-link:not(::first-child) {
   margin-left: 30px;
 }
 .team-line {
@@ -208,8 +210,10 @@ p {
   padding-bottom: 94px;
 }
 .team .list {
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-around;
+  list-style: none;
 }
 .team-list {
   font-weight: 700;
@@ -220,6 +224,7 @@ p {
   color: var(--brand-color);
   margin-top: 30px;
   text-align: center;
+  margin-bottom: 10px;
 }
 .team-link-list {
   font-weight: 400;
@@ -281,13 +286,8 @@ p {
 
 /* project */
 
-.project-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-
-  letter-spacing: 0.03em;
-  color: var(--brand-color);
+.project-list .project-text:hover {
+  color: #ffffff;
 }
 .project-list {
   display: flex;
@@ -304,18 +304,17 @@ p {
   left: 512px;
   top: 174px;
   background: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border: #ffffff;
 }
 .project-2nd-butoon {
-  width: 125px;
+  width: 135px;
   height: 38px;
   left: 593px;
   top: 174px;
-
   background: #f5f4fa;
   border-radius: 4px;
+  border: #ffffff;
 }
 .project-3d-butoon {
   width: 112px;
@@ -324,6 +323,7 @@ p {
   top: 174px;
   background: #f5f4fa;
   border-radius: 4px;
+  border: #ffffff;
 }
 .project-4r-butoon {
   width: 103px;
@@ -332,6 +332,7 @@ p {
   top: 174px;
   background: #f5f4fa;
   border-radius: 4px;
+  border: #ffffff;
 }
 .project-5v-butoon {
   width: 130px;
@@ -340,8 +341,16 @@ p {
   top: 174px;
   background: #f5f4fa;
   border-radius: 4px;
+  border: #ffffff;
 }
-
+.butoon-size{
+  padding: 6px 22px;
+}
+.project-menu{
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 .project-text {
   font-weight: 500;
   font-size: 16px;
@@ -356,13 +365,17 @@ p {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--second-color);
+  text-align: center;
 }
 .project-job {
+  padding: 0;
+  margin: 0;
+  margin-right: -30px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding-bottom: 94px;
+  list-style: none;
+ flex-wrap: wrap;
 }
+
 
 /* address */
 .footer {
@@ -388,6 +401,6 @@ p {
 .footer .container {
   padding-top: 60px;
 }
-.footer .list{
+.footer .list {
   margin-top: 20px;
 }
