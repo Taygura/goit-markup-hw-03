@@ -6,6 +6,7 @@ body {
   --brand-color: #212121;
   --second-color: #757575;
   --next-color: #ffffff;
+  --bornon: none;
 }
 .container {
   width: 1200px;
@@ -114,7 +115,7 @@ p {
   padding: 10px 32px;
   border-radius: 4px;
   background: #2196f3;
-  border: #ffffff;
+  border: var(--bornon)
   
 }
 .hover-butoon:hover {
@@ -305,7 +306,7 @@ margin-right: 30px;
   top: 174px;
   background: #2196f3;
   border-radius: 4px;
-  border: #ffffff;
+  border: var(--bornon);
 }
 .project-2nd-butoon {
   width: 135px;
@@ -314,7 +315,7 @@ margin-right: 30px;
   top: 174px;
   background: #f5f4fa;
   border-radius: 4px;
-  border: #ffffff;
+  border: var(--bornon);
 }
 .project-3d-butoon {
   width: 112px;
@@ -323,7 +324,7 @@ margin-right: 30px;
   top: 174px;
   background: #f5f4fa;
   border-radius: 4px;
-  border: #ffffff;
+  border: var(--bornon);
 }
 .project-4r-butoon {
   width: 103px;
@@ -332,7 +333,7 @@ margin-right: 30px;
   top: 174px;
   background: #f5f4fa;
   border-radius: 4px;
-  border: #ffffff;
+  border: var(--bornon);
 }
 .project-5v-butoon {
   width: 130px;
@@ -341,7 +342,7 @@ margin-right: 30px;
   top: 174px;
   background: #f5f4fa;
   border-radius: 4px;
-  border: #ffffff;
+  border: var(--bornon);
 }
 .butoon-size{
   padding: 6px 22px;
