@@ -135,7 +135,7 @@ p {
   padding-bottom: 94px;
 }
 .hero-list-item {
-  flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .hero-list-item:not(:last-child) {
 margin-right: 30px;
@@ -177,7 +177,7 @@ margin-right: 30px;
   padding-bottom: 94px;
 }
 .work-img {
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 2 * 30px) / 3);;
 }
 .work-img:not(:last-child){
   margin-right: 30px;
@@ -192,7 +192,7 @@ margin-right: 30px;
 }
   .team-link:not(:last-child) {
   margin-right: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc((100% - 3 * 30px) / 4);;
 }
 .team-link:not(::first-child) {
   margin-left: 30px;
@@ -344,11 +344,15 @@ margin-right: 30px;
   border-radius: 4px;
   border: var(--bornon);
 }
+.hover-butoon:hover,:focus{
+  color: #ffffff;
+  background: #188ce8;
+}
 .butoon-size{
   padding: 6px 22px;
 }
 .project-menu{
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 3 * 30px) / 3);;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -358,7 +362,7 @@ margin-right: 30px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--brand-color);
+  /* color: var(--brand-color); */
 }
 .project-text-link {
   font-weight: 400;
