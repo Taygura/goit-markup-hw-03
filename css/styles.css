@@ -105,7 +105,7 @@ p {
   max-width: 696px;
 }
 .hero-button {
-   font-weight: 700;
+  font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   display: flex;
@@ -115,8 +115,7 @@ p {
   padding: 10px 32px;
   border-radius: 4px;
   background: #2196f3;
-  border: var(--bornon)
-  
+  border: var(--bornon);
 }
 .hover-butoon:hover {
   background: #188ce8;
@@ -138,7 +137,7 @@ p {
   flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .proda-list-item:not(:last-child) {
-margin-right: 30px;
+  margin-right: 30px;
 }
 .proda-link {
   font-weight: 700;
@@ -173,28 +172,32 @@ margin-right: 30px;
   display: flex;
   list-style: none;
 }
-.work{
+.work {
   padding-bottom: 94px;
 }
 .work-img {
-  flex-basis: calc((100% - 2 * 30px) / 3);;
+  flex-basis: calc((100% - 2 * 30px) / 3);
 }
-.work-img:not(:last-child){
+.work-img:not(:last-child) {
   margin-right: 30px;
 }
 /* team */
 
 .team {
   background: #f5f4fa;
-    padding-top: 94px;
+  padding-top: 94px;
   padding-bottom: 50px;
 }
 .team-link {
   background: var(--next-color);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-  .team-link:not(:last-child) {
+.team-link:not(:last-child) {
   margin-right: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 4);;
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .team-link:not(::first-child) {
   margin-left: 30px;
@@ -207,7 +210,6 @@ margin-right: 30px;
   letter-spacing: 0.03em;
   color: var(--brand-color);
   margin-bottom: 50px;
-
 }
 .all-team {
   padding-bottom: 94px;
@@ -240,7 +242,7 @@ margin-right: 30px;
 }
 
 /* footer */
-.footer{
+.footer {
   padding-bottom: 60px;
 }
 .address {
@@ -261,7 +263,6 @@ margin-right: 30px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  
 }
 .address .logo {
   display: block;
@@ -287,9 +288,19 @@ margin-right: 30px;
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
+.line {
+  position: absolute;
+  width: 2000px;
+  height: 0px;
+  left: 0px;
+  top: 80px;
+  border: 1px solid #ececec;
+  justify-content: center;
+}
 
 /* project */
-.project{
+
+.project {
   padding-top: 94px;
 }
 .project-list .project-text:hover {
@@ -298,9 +309,8 @@ margin-right: 30px;
 .project-list {
   display: flex;
   justify-content: center;
-  
+
   margin-bottom: 50px;
-  
 }
 .project .butoon {
   margin-right: 8px;
@@ -311,7 +321,8 @@ margin-right: 30px;
   left: 512px;
   top: 174px;
   background: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: var(--bornon);
 }
@@ -351,17 +362,19 @@ margin-right: 30px;
   border-radius: 4px;
   border: var(--bornon);
 }
-.hover-butoon:hover,:focus{
+.hover-butoon:hover,
+:focus {
   color: #ffffff;
   background: #188ce8;
 }
-.butoon-size{
+.butoon-size {
   padding: 6px 22px;
 }
-.project-menu{
-  flex-basis: calc((100% - 3 * 30px) / 3);;
-  margin-right: 30px;
+.project-menu {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-right: 25px;
   margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
 }
 
 .project-text {
@@ -370,12 +383,15 @@ margin-right: 30px;
   line-height: 26px;
   letter-spacing: 0.03em;
 }
-.project-text-unik{
+.project-job .project-text {
+  margin-bottom: 4px;
+}
+.project-text-unik {
   font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-text-align: center;
-letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: #ffffff;
 }
 .project-text-link {
@@ -385,8 +401,8 @@ letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
-.project-aftograv{
-  border-left: 24px;
+.project-aftograv {
+ border: 20px solid #ffffff;
 }
 .project-job {
   padding: 0;
@@ -394,9 +410,8 @@ letter-spacing: 0.03em;
   margin-right: -30px;
   display: flex;
   list-style: none;
- flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 
 /* address */
 .footer {
